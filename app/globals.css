@@ -408,7 +408,7 @@ button { cursor: pointer; font-family: var(--font-body); }
   bottom: 0;
   width: 95%;
   height: 127%;
-  background-image: url('/images/GW-law-hero-1.avif');
+  background-image: url('/GW-Law-Groups/images/GW-law-hero-1.avif');
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
@@ -440,7 +440,7 @@ button { cursor: pointer; font-family: var(--font-body); }
   inset: 0;
   background:
     linear-gradient(rgba(11, 26, 52, 0.55), rgba(11, 26, 52, 0.55)),
-    url('/images/hero-bg-1.png') center center / cover no-repeat;
+    url('/GW-Law-Groups/images/hero-bg-1.png') center center / cover no-repeat;
   z-index: 0;
   pointer-events: none;
 }

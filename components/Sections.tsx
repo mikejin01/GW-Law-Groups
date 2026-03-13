@@ -2,6 +2,8 @@
 
 import { useRef } from "react";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export function LogosSection() {
   const logos = [
     { name: "Newsweek", className: "logo-newsweek" },
@@ -47,37 +49,37 @@ export function PracticeSection() {
     {
       title: "AUTO ACCIDENTS",
       category: "Accidents",
-      img: "/images/attorney-1.png",
+      img: `${basePath}/images/attorney-1.png`,
       items: ["Car Accidents", "Hit and Run", "Bike Accidents", "Car Services Accidents (Uber/Lyft)", "Pedestrian & Passenger Injury"],
     },
     {
       title: "MEDICAL MALPRACTICE",
       category: "Injury",
-      img: "/images/attorney-2.png",
+      img: `${basePath}/images/attorney-2.png`,
       items: ["Misdiagnosis", "Delayed Diagnosis", "Surgical Errors", "Medication Errors", "Failure to Treat", "Hospital-Related Infections", "Premature Discharge"],
     },
     {
       title: "WORKPLACE INJURY",
       category: "Accidents",
-      img: "/images/attorney-3.png",
+      img: `${basePath}/images/attorney-3.png`,
       items: ["Falls from Heights", "Struck by Objects", "Machinery Accidents", "Slips, Trips, and Falls", "Injury from Ladder", "Vehicle Accidents"],
     },
     {
       title: "TRUCK / BUS ACCIDENTS",
       category: "Accidents",
-      img: "/images/about.png",
+      img: `${basePath}/images/about.png`,
       items: ["Passenger Injury", "Hit by Bus", "Struck by Trucks", "Heavy Vehicle Accidents"],
     },
     {
       title: "BIKE / SCOOTER ACCIDENTS",
       category: "Accidents",
-      img: "/images/blog-2.png",
+      img: `${basePath}/images/blog-2.png`,
       items: ["Pedestrian", "Bicycle", "E-Bike", "Scooter", "E-Scooter"],
     },
     {
       title: "SLIP & FALL",
       category: "Premises",
-      img: "/images/blog-1.png",
+      img: `${basePath}/images/blog-1.png`,
       items: ["Wet or Slippery Floors", "Defective Flooring", "Uneven Surfaces", "Inadequate Handrails / Signage", "Fall in Snow"],
     },
   ];
@@ -189,7 +191,7 @@ export function Locations() {
             <div className="section-dot-label">Our locations</div>
             <p>We represent injured victims across New York City, with offices in four convenient locations. Wherever you are, contact us for a free case review.</p>
             <a href="#" className="btn-red">Locations</a>
-            <img src="/images/blog-1.png" alt="Our offices" className="location-img" />
+            <img src={`${basePath}/images/blog-1.png`} alt="Our offices" className="location-img" />
           </div>
 
           <div className="locations-cities">
@@ -208,7 +210,7 @@ export function Community() {
   return (
     <section className="community-section" id="community">
       <div className="community-bg">
-        <img src="/images/community-bg.png" alt="GW Law Groups community event" />
+        <img src={`${basePath}/images/community-bg.png`} alt="GW Law Groups community event" />
       </div>
       <div className="container community-content reveal">
         <h2>GW LAW GROUPS<br /><span className="red">GIVING BACK</span> TO THE COMMUNITY</h2>

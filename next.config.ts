@@ -1,9 +1,12 @@
 import type { NextConfig } from "next";
 
+const basePath = "/GW-Law-Groups";
+
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/GW-Law-Groups",
-  assetPrefix: "/GW-Law-Groups/",
+  basePath,
+  assetPrefix: `${basePath}/`,
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
 };
 
 export default nextConfig;
